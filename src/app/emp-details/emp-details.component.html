@@ -1,0 +1,19 @@
+<h3>Employee Details Component</h3>
+
+<input type="text" #box placeholder="Employee ID" name="empId"/>
+<button (click)="getEmpByID(box.valueAsNumber)">Get Employee By Id</button>
+<button (click)="deleteEmpByID(box.valueAsNumber)">Delete Employee By Id</button>
+
+<br/><br/>
+
+
+<div>
+    Employee Id  :  {{empObj.empno}}  <br/>
+    Employee Name  :  {{empObj.ename}}  <br/>
+    Employee Job  :  {{empObj.job}}  <br/>
+    Employee Salary  :  {{empObj.sal}}  <br/>
+    Employee Deptno  :  {{empObj.deptno}}  <br/>
+
+</div>
+
+<router-outlet></router-outlet>
